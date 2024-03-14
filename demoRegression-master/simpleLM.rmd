@@ -63,3 +63,13 @@ summary.lm(ourheadwth)
 
 The order for worst to best would be headwth, weight, neck, and chest
 
+```{r}
+ourheadlen <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(ourheadlen)
+summary.lm(ourheadlen)
+```
+
+The order for worst to best would be headwth, weight, neck, chest, and headlen
+
+
